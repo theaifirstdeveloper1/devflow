@@ -1,4 +1,4 @@
-import { Code2, BookOpen, Lightbulb, Bug, Inbox, type LucideProps } from 'lucide-react';
+import { Code2, BookOpen, Lightbulb, Bug, Inbox, CheckSquare, type LucideProps } from 'lucide-react';
 import type { EntryCategory } from '@/lib/types';
 
 export const categoryIcons: Record<EntryCategory, React.ComponentType<LucideProps>> = {
@@ -7,6 +7,7 @@ export const categoryIcons: Record<EntryCategory, React.ComponentType<LucideProp
   idea: Lightbulb,
   bug_fix: Bug,
   general: Inbox,
+  task: CheckSquare,
 };
 
 export const CategoryIcon = ({ category, ...props }: { category: EntryCategory } & LucideProps) => {
